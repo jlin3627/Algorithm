@@ -19,6 +19,10 @@
       <option name="LINE_COMMENT_ADD_SPACE" value="true" />
       <option name="KEEP_FIRST_COLUMN_COMMENT" value="false" />
       <option name="BLANK_LINES_BEFORE_PACKAGE" value="1" />
+      <option name="BRACE_STYLE" value="2" />
+      <option name="CLASS_BRACE_STYLE" value="2" />
+      <option name="METHOD_BRACE_STYLE" value="2" />
+      <option name="LAMBDA_BRACE_STYLE" value="2" />
       <option name="ELSE_ON_NEW_LINE" value="true" />
       <option name="CATCH_ON_NEW_LINE" value="true" />
       <option name="FINALLY_ON_NEW_LINE" value="true" />
@@ -58,6 +62,9 @@
       <option name="ENUM_CONSTANTS_WRAP" value="1" />
       <option name="WRAP_ON_TYPING" value="0" />
       <option name="SOFT_MARGINS" value="80" />
+      <indentOptions>
+        <option name="USE_TAB_CHARACTER" value="true" />
+      </indentOptions>
       <arrangement>
         <groups>
           <group>
