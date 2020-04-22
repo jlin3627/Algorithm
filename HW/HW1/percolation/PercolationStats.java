@@ -5,18 +5,20 @@
  **************************************************************************** */
 
 import edu.princeton.cs.algs4.StdRandom;
+import edu.princeton.cs.algs4.StdStats;
 
 public class PercolationStats
 {
-	private Percolation perc;
 	private double ans_mean;
-	private double ans[];
 	private double stdDev_ans;
 	private int totalT;
 
 	// perform independent trials on an n-by-n grid
 	public PercolationStats(int n, int trials)
 	{
+		Percolation perc;
+		double ans[];
+
 		if (n <= 0 || trials <= 0)
 		{
 			throw new IllegalArgumentException("Out of bound");
@@ -29,7 +31,7 @@ public class PercolationStats
 		ans = new double[trials];
 		totalT = trials;
 		stdDev_ans = 0;
-		for (int i = 1; i < trials; ++i)
+		for (int i = 0; i < trials; i++)
 		{
 			perc = new Percolation(n);
 			newRow = 0;
@@ -44,17 +46,18 @@ public class PercolationStats
 			}
 			total = perc.numberOfOpenSites();
 			single_ans = total * 1.0 / (n * n);
-			ans_mean += single_ans;
+			//ans_mean += single_ans;
 			ans[i] = single_ans;
 		}
-		ans_mean = ans_mean / totalT;
-		//stdDev_ans = StdStats.stddev(ans);
-		for (int i = 0; i < ans.length; i++)
+		//ans_mean = ans_mean / totalT;
+		ans_mean = StdStats.mean(ans);
+		stdDev_ans = StdStats.stddev(ans);
+		/*for (int i = 0; i < ans.length; i++)
 		{
 			stdDev_ans += (ans[i] - ans_mean) * (ans[i] - ans_mean);
 		}
 		stdDev_ans = stdDev_ans / (totalT - 1);
-		stdDev_ans = Math.sqrt(stdDev_ans);
+		stdDev_ans = Math.sqrt(stdDev_ans);*/
 
 	}
 
