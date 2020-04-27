@@ -13,7 +13,7 @@ public class Permutation
 	{
 		RandomizedQueue<String> randomQ = new RandomizedQueue<>();
 		int n = Integer.parseInt(args[0]);
-		for (int i = 0; i < n; i++)
+		while (!StdIn.isEmpty())
 		{
 			String value = StdIn.readString();
 			//StdOut.println(value);

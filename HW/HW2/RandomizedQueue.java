@@ -55,7 +55,7 @@ public class RandomizedQueue<Item> implements Iterable<Item>
 		{
 			throw new java.util.NoSuchElementException("Dequeue: empty Queue");
 		}
-		int removeInd = (int) (size * StdRandom.uniform());
+		int removeInd = StdRandom.uniform(size);
 		Item ans = itms[removeInd];
 		for (int i = removeInd; i < size; i++)
 		{
@@ -80,8 +80,7 @@ public class RandomizedQueue<Item> implements Iterable<Item>
 		{
 			throw new java.util.NoSuchElementException("Sample: empty Queue");
 		}
-		int ranInd = (int) (size * StdRandom.uniform());
-		return itms[ranInd];
+		return itms[StdRandom.uniform(size)];
 	}
 
 	private void resize(int capacity)
@@ -100,15 +99,19 @@ public class RandomizedQueue<Item> implements Iterable<Item>
 	// return an independent iterator over items in random order
 	public Iterator<Item> iterator()
 	{
-		Item[] randItems = itms;
+		Item[] randItems = (Item[]) new Object[size];
 		for (int i = 0; i < size; i++)
 		{
-			int r = (int) (size * StdRandom.uniform());
+			randItems[i] = itms[i];
+		}
+		for (int i = 0; i < size; i++)
+		{
+			int r = StdRandom.uniform(i + 1);
 			Item swap = randItems[i];
 			randItems[i] = randItems[r];
 			randItems[r] = swap;
 		}
-		return new RandomizedQueueIterator(itms);
+		return new RandomizedQueueIterator(randItems);
 	}
 
 	private class RandomizedQueueIterator implements Iterator<Item>
