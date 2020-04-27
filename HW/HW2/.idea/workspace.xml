@@ -31,11 +31,10 @@
     <analyzeAfterCompile>true</analyzeAfterCompile>
     <toolWindowToFront>false</toolWindowToFront>
   </component>
-  <component name="ProjectId" id="1amSBqwAkv4HPU3YuvhIpsSwaik" />
+  <component name="ProjectId" id="1b5fRDQhgDa6jl5set5YWpIEx2A" />
   <component name="PropertiesComponent">
     <property name="ToolWindowMessages.ShowToolbar" value="false" />
     <property name="ToolWindowRun.ShowToolbar" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="settings.editor.selected.configurable" value="preferences.sourceCode.Java" />
   </component>
   <component name="RunDashboard">
@@ -50,33 +49,28 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.PercolationStats">
-    <configuration name="InteractivePercolationVisualizer" type="Application" factoryName="Application">
-      <option name="MAIN_CLASS_NAME" value="InteractivePercolationVisualizer" />
+  <component name="RunManager" selected="Application.Deque">
+    <configuration name="Deque" type="Application" factoryName="Application">
+      <option name="MAIN_CLASS_NAME" value="Deque" />
       <module name="Algorithms, Part I" />
-      <option name="PROGRAM_PARAMETERS" value="5" />
+      <option name="PROGRAM_PARAMETERS" value="mediumTale.txt" />
       <method v="2" />
     </configuration>
-    <configuration name="PercolationStats" type="Application" factoryName="Application">
-      <option name="MAIN_CLASS_NAME" value="PercolationStats" />
+    <configuration name="Permutation" type="Application" factoryName="Application">
+      <option name="MAIN_CLASS_NAME" value="Permutation" />
       <module name="Algorithms, Part I" />
-      <option name="PROGRAM_PARAMETERS" value="200 100" />
+      <option name="PROGRAM_PARAMETERS" value="3 &lt; distinct.txt" />
       <method v="2" />
     </configuration>
-    <configuration name="PercolationVisualizer" type="Application" factoryName="Application">
-      <option name="MAIN_CLASS_NAME" value="PercolationVisualizer" />
+    <configuration name="RandomizedQueue" type="Application" factoryName="Application">
+      <option name="MAIN_CLASS_NAME" value="RandomizedQueue" />
       <module name="Algorithms, Part I" />
-      <option name="PROGRAM_PARAMETERS" value="input2.txt" />
+      <option name="PROGRAM_PARAMETERS" value="distinct.txt" />
       <method v="2" />
     </configuration>
     <configuration default="true" type="Application" factoryName="Application">
       <method v="2" />
     </configuration>
-    <list>
-      <item itemvalue="Application.InteractivePercolationVisualizer" />
-      <item itemvalue="Application.PercolationVisualizer" />
-      <item itemvalue="Application.PercolationStats" />
-    </list>
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -86,19 +80,5 @@
       <are-packages-shown value="true" />
       <is-autoscroll-to-source value="true" />
     </todo-panel>
-  </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/PercolationStats.java</url>
-          <line>30</line>
-          <option name="timeStamp" value="1" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
-  </component>
-  <component name="com.intellij.coverage.CoverageDataManagerImpl">
-    <SUITE FILE_PATH="coverage/Percolation$PercolationVisualizer.ic" NAME="PercolationVisualizer Coverage Results" MODIFIED="1587349123927" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
   </component>
 </project>
