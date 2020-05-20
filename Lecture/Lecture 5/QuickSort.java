@@ -33,13 +33,23 @@ public class QuickSort
     public static void sort (Comparable[] a, int lo, int hi)
     {
         // improvement insertion sort small array
-        if (hi <= lo + CUTOFF - 1)
+        /*if (hi <= lo + CUTOFF - 1)
         {
             Insertion.sort(a, lo, hi);
             return;
-        }
-        // if (hi <= lo) return;
-        int j = partition(a, lo, hi);
+        }*/
+
+
+
+        // normal:
+         if (hi <= lo) return;
+        
+        /* Improvement 2, median of 3 random items
+        int m = medianOf3(a, lo, lo+ (hi - lo)/2, hi);
+        swap(a, lo, m);
+        */
+        
+         int j = partition(a, lo, hi);
         sort(a, lo, j-1);
         sort(a, j+1, hi);
     }
